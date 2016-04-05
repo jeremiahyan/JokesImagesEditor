@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,40 +20,41 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jcanvas.min.js"></script>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </head>
 
-  <body role="document">
+  <body ng-app="coolbeansToy" role="document">
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div ng-controller="TextController as textCtrl" class="jumbotron">
         <h1>酷豆词曲小玩具</h1>
         <p>欢迎来到酷豆音乐词曲小玩具, 想不想让你的歌曲被王菲演唱, 并在CCTV播出呢? 来吧, 填写你的歌曲名和作词作曲人的姓名, 马上体验一下!</p>
         <p><span class="label label-warning">PS.</span>  这个小玩具只是为了玩哟, 切勿当真~</p>
-        <img src="images/faye-live-src.jpg" alt="Faye Wong Live" class="img-rounded">
-      </div>
+        <canvas width="1300" height="880" style="border:1px solid #d3d3d3;" class="img-rounded">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <!--img src="images/faye-live-src.jpg" alt="Faye Wong Live" class="img-rounded"-->
 
-      <form>
-        <div class="form-group">
-          <label for="inputSongName">歌曲名</label>
-          <input type="text" class="form-control" id="InputSongName" placeholder="请输入您的歌曲名称">
-        </div>
-        <div class="form-group">
-          <label for="inputAuthorName">词曲作者</label>
-          <input type="password" class="form-control" id="inputAuthorName" placeholder="请输入您的大名">
-        </div>
-        <button type="submit" class="btn btn-lg btn-primary">马上生成</button>
-      </form>
+        <form name="reviewForm" ng-submit="textCtrl.drawImage()">
+          <div class="form-group">
+            <label for="inputSongName">歌曲名</label>
+            <input ng-model="textCtrl.songName" type="text" class="form-control" id="InputSongName" placeholder="请输入您的歌曲名称">
+          </div>
+          <div class="form-group">
+            <label for="inputAuthorName">词曲作者</label>
+            <input ng-model="textCtrl.authorName" type="text" class="form-control" id="inputAuthorName" placeholder="请输入您的大名">
+          </div>
+          <fieldset class="form-group">
+            <input type="submit" class="btn btn-primary pull-right" value="马上生成" />
+          </fieldset>
+        </form>
+      </div>
 
     </div> <!-- /container -->
 
@@ -61,9 +62,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--script src="assets/js/ie10-viewport-bug-workaround.js"></script-->
+
   </body>
 </html>
