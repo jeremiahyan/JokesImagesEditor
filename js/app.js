@@ -12,13 +12,21 @@
         };
     });
 
+    var drawMyImage = function(imageURL) {
+        $('canvas').drawImage({
+            source: imageURL,
+            x: 0, y: 0,
+            fromCenter: false
+        });
+    };
+
     var drawMyText = function(songName, authorName) {
         $('canvas').drawText({
             fillStyle: '#27acea',
             //strokeStyle: '#25a',
             strokeWidth: 2,
-            x: 500, y: 280,
-            fontSize: 72,
+            x: 400, y: 220,
+            fontSize: 60,
             fontFamily: 'Verdana, sans-serif, Arial',
             text: songName,
             fromCenter: true
@@ -28,8 +36,8 @@
             fillStyle: '#f0f0f0',
             //strokeStyle: '#25a',
             strokeWidth: 2,
-            x: 500, y: 400,
-            fontSize: 60,
+            x: 400, y: 320,
+            fontSize: 50,
             fontFamily: 'Verdana, sans-serif, Arial',
             text: '演唱: 王　菲',
             fromCenter: true
@@ -39,8 +47,8 @@
             fillStyle: '#f0f0f0',
             //strokeStyle: '#25a',
             strokeWidth: 2,
-            x: 500, y: 500,
-            fontSize: 60,
+            x: 400, y: 400,
+            fontSize: 50,
             fontFamily: 'Verdana, sans-serif, Arial',
             text: '作词: ' + authorName,
             fromCenter: true
@@ -50,23 +58,13 @@
             fillStyle: '#f0f0f0',
             //strokeStyle: '#25a',
             strokeWidth: 2,
-            x: 500, y: 600,
-            fontSize: 60,
+            x: 400, y: 480,
+            fontSize: 50,
             fontFamily: 'Verdana, sans-serif, Arial',
             text: '作曲: ' + authorName,
             fromCenter: true
         });
     };
-
-    var drawMyImage = function(imageURL) {
-        $('canvas').drawImage({
-            source: imageURL,
-            x: 10, y: 10,
-            fromCenter: false
-        });
-    };
-
-    drawMyImage('images/faye-live.jpg');
 
     /*
      $('canvas').drawText({
