@@ -10,6 +10,8 @@
         
         this.hasSubmit = false;
 
+        $('input[type="text"]').prop('disabled', false);
+
         drawMyImage(this.image);
 
         this.drawImage = function () {
@@ -35,6 +37,8 @@
                 this.musicWriterName = this.musicWriterName[0] + '　' + this.musicWriterName[1];
             }
             drawMyText(this.songName, this.lyricWriterName, this.musicWriterName);
+
+            $('input[type="text"]').prop('disabled', true);
 
             this.image = $('canvas').getCanvasImage();
         };
