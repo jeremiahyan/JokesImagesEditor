@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e6cfb6c-7873-4f9b-9b0e-7ce50288131b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="jokes-images-editor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +28,9 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="840">
-                  <caret line="73" column="132" selection-start-line="73" selection-start-column="132" selection-end-line="73" selection-end-column="132" />
+                <state relative-caret-position="525">
+                  <caret line="52" column="129" selection-start-line="52" selection-start-column="129" selection-end-line="52" selection-end-column="129" />
                   <folding>
-                    <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,19 +110,19 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="465">
-                  <caret line="52" column="146" selection-start-line="52" selection-start-column="146" selection-end-line="52" selection-end-column="146" />
+                  <caret line="52" column="145" selection-start-line="52" selection-start-column="145" selection-end-line="52" selection-end-column="145" />
                   <folding>
                     <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1459930392000" expanded="true" signature="1650:3772" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="1705:3742" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="1858:3730" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="2218:2298" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="2634:3717" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="2669:2862" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="2897:3108" placeholder="..." />
-                    <marker date="1459930392000" expanded="true" signature="3394:3701" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="1650:3770" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="1705:3740" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="1858:3728" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="2217:2297" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="2632:3715" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="2667:2860" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="2895:3106" placeholder="..." />
+                    <marker date="1459930628000" expanded="true" signature="3392:3699" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -377,12 +375,12 @@
       <workItem from="1459859046968" duration="3185000" />
       <workItem from="1459867666754" duration="12018000" />
       <workItem from="1459883759526" duration="494000" />
-      <workItem from="1459884507354" duration="9426000" />
+      <workItem from="1459884507354" duration="9627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25123000" />
+    <option name="totallyTimeSpent" value="25324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -436,7 +434,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -505,10 +502,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="73" column="132" selection-start-line="73" selection-start-column="132" selection-end-line="73" selection-end-column="132" />
+        <state relative-caret-position="525">
+          <caret line="52" column="129" selection-start-line="52" selection-start-column="129" selection-end-line="52" selection-end-column="129" />
           <folding>
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
