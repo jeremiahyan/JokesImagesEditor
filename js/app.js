@@ -3,12 +3,13 @@
 
     app.controller('TextController', function () {
         this.songName = '';
-        this.authorName = '';
+        this.lyricWriterName = '';
+        this.musicWriterName = '';
 
         drawMyImage('images/faye-live.jpg');
 
         this.drawImage = function () {
-            drawMyText(this.songName, this.authorName);
+            drawMyText(this.songName, this.lyricWriterName, this.musicWriterName);
         };
     });
 
@@ -20,7 +21,7 @@
         });
     };
 
-    var drawMyText = function(songName, authorName) {
+    var drawMyText = function(songName, lyricWriterName, musicWriterName) {
         $('canvas').drawText({
             fillStyle: '#27acea',
             //strokeStyle: '#25a',
@@ -50,7 +51,7 @@
             x: 400, y: 400,
             fontSize: 50,
             fontFamily: 'Verdana, sans-serif, Arial',
-            text: '作词: ' + authorName,
+            text: '作词: ' + lyricWriterName,
             fromCenter: true
         });
 
@@ -61,7 +62,7 @@
             x: 400, y: 480,
             fontSize: 50,
             fontFamily: 'Verdana, sans-serif, Arial',
-            text: '作曲: ' + authorName,
+            text: '作曲: ' + musicWriterName,
             fromCenter: true
         });
     };
