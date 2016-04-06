@@ -5,11 +5,19 @@
         this.songName = '';
         this.lyricWriterName = '';
         this.musicWriterName = '';
+        
+        this.hasSubmit = false;
 
         drawMyImage('images/faye-live.jpg');
 
         this.drawImage = function () {
+            this.hasSubmit = true;
             drawMyText(this.songName, this.lyricWriterName, this.musicWriterName);
+        };
+
+        this.saveImage = function () {
+            canvas = document.getElementById("mycanvas");
+            Canvas2Image.saveAsImage(canvas, 1000, 666, 'png');
         };
     });
 
@@ -66,6 +74,7 @@
             fromCenter: true
         });
     };
+
 
     /*
      $('canvas').drawText({
