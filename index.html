@@ -23,7 +23,7 @@
     <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jcanvas.min.js"></script>
-    <script type="text/javascript" src="js/canvas2image.js"></script>
+    <!--script type="text/javascript" src="js/canvas2image.js"></script-->
 
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -50,12 +50,13 @@
         <h2>酷豆词曲小玩具</h2>
         <p>欢迎来到酷豆音乐词曲小玩具, 想不想让你的歌曲被王菲演唱, 并在CCTV播出呢? 来吧, 填写你的歌曲名和作词作曲人的姓名, 马上体验一下!</p>
         <p><span class="label label-warning">PS.</span>  这个小玩具只是为了玩哟, 切勿当真~</p>
-        <canvas id="mycanvas" width="1000" height="666" style="border:1px solid #d3d3d3; width: 320px; height: 216px;" class="img-rounded">
+        <canvas id="mycanvas" ng-hide="textCtrl.hasSubmit" width="1000" height="666" style="border:1px solid #d3d3d3; width: 336px; height: 224px;" class="img-rounded">
           Your browser does not support the HTML5 canvas tag.
         </canvas>
+        <img ng-src="{{textCtrl.image}}" ng-show="textCtrl.hasSubmit" style="border:1px solid #d3d3d3; width: 336px; height: 224px;" class="img-rounded"/>
         <!--img src="images/faye-live-src.jpg" alt="Faye Wong Live" class="img-rounded"-->
 
-        <form name="reviewForm" ng-submit="textCtrl.drawImage()">
+        <form name="reviewForm" ng-submit="!textCtrl.hasSubmit && textCtrl.drawImage()">
           <div class="form-group">
             <label for="inputSongName">歌曲名</label>
             <input ng-model="textCtrl.songName" type="text" class="form-control" id="InputSongName" placeholder="请输入您的歌曲名称">
@@ -70,7 +71,7 @@
           </div>
           <fieldset class="form-group">
             <input type="submit" ng-hide="textCtrl.hasSubmit" class="btn btn-lg btn-primary pull-right" value="马上生成" style="width: 100%;" />
-            <button ng-show="textCtrl.hasSubmit" ng-click="textCtrl.saveImage()" class="btn btn-lg btn-info" style="width: 100%;">保存图片</button>
+            <button ng-show="textCtrl.hasSubmit" ng-click="!textCtrl.submit" class="btn btn-lg btn-info" style="width: 100%;">长按图片保存</button-->
           </fieldset>
         </form>
       </div>
