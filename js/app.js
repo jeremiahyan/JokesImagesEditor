@@ -6,14 +6,34 @@
         this.lyricWriterName = '';
         this.musicWriterName = '';
 
-        this.image = {};
+        this.image = "images/faye-live.jpg";
         
         this.hasSubmit = false;
 
-        drawMyImage('images/faye-live.jpg');
+        drawMyImage(this.image);
 
         this.drawImage = function () {
             this.hasSubmit = true;
+            if (this.lyricWriterName.length === 0) {
+                this.lyricWriterName = '　　　';
+            }
+            if (this.musicWriterName.length === 0) {
+                this.musicWriterName = '　　　';
+            }
+
+            if (this.lyricWriterName.length === 1) {
+                this.lyricWriterName = '　' + this.lyricWriterName + '　';
+            }
+            if (this.musicWriterName.length === 1) {
+                this.musicWriterName = '　' + this.musicWriterName + '　';
+            }
+
+            if (this.lyricWriterName.length === 2) {
+                this.lyricWriterName = this.lyricWriterName[0] + '　' + this.lyricWriterName[1];
+            }
+            if (this.musicWriterName.length === 2) {
+                this.musicWriterName = this.musicWriterName[0] + '　' + this.musicWriterName[1];
+            }
             drawMyText(this.songName, this.lyricWriterName, this.musicWriterName);
 
             this.image = $('canvas').getCanvasImage();
